@@ -1,0 +1,103 @@
+@import "layout.scss";
+@import "normalize.scss";
+
+body{
+	padding: 20px 0 ;
+}
+
+
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 10px 0;
+	text-transform: uppercase;
+}
+
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+	padding: 10px;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	padding: 10px;
+	outline: none;
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+.ba-map {
+	min-height: 600px;
+	box-shadow: 0 0 1px 1px #244;
+	border-radius: 5px;
+}
+.ba-title {
+	text-align: center;
+	color: #444;
+}
+.ba-controls {
+	margin-top: 20px;
+	input {
+		box-shadow: 0 0 1px 1px #244;
+		border: none;
+		border-radius: 3px;
+		&:focus {
+			background: rgba(51, 153, 255, 0.3);
+		}
+	}
+}
+#calculate {
+	margin-left: 20px;
+	box-shadow: 0 0 1px 1px #244;
+	border: none;
+	border-radius: 3px;
+	background: #FFF;
+	&:hover {
+		background: rgba(5, 5, 5, 0.2);
+	}
+}
